@@ -36,9 +36,9 @@ redirect_from: "/Mathics/"
 
 <p>Mirrors:</p>
 
-<ul>
-<li><a href="http://www.mathics.net/">http://www.mathics.net/</a></li>
+<ul id="mirrors">
 <li><a href="http://mathics.angusgriffith.com/">http://mathics.angusgriffith.com/</a></li>
+<li><a href="http://www.mathics.net/">http://www.mathics.net/</a></li>
 </ul>
 
 <h2>
@@ -76,17 +76,46 @@ redirect_from: "/Mathics/"
       </footer>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-66935986-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+<script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
 
+<script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-66935986-1");
+  pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+
+<script type="text/javascript">
+  function ajaxRequest(url, callback) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (xmlhttp.readyState == 4) {
+        callback(xmlhttp.status, xmlhttp.responseText);
+      }
+    }
+    xmlhttp.open('POST', url, true);
+    xmlhttp.send();
+  }
+
+  function checkMirrorStatus(mirror) {
+    mirror.innerHTML = mirror.innerHTML + '<img src="images/loading.gif"/>';
+    ajaxRequest(url = mirror.textContent, function (stat, text) {
+      if (stat == 200) {
+        mirror.children[1].src = 'images/okay.png';
+      }
+      mirror.children[1].src = 'images/fail.png';
+    });
+  }
+
+  mirrors = document.getElementById("mirrors").getElementsByTagName("li");
+  for (var i = 0; i < mirrors.length; i++) {
+    console.log("checking", mirrors[i].textContent);
+    checkMirrorStatus(mirrors[i]);
+  }
+</script>
 
   </body>
 </html>
