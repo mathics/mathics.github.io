@@ -423,13 +423,3 @@ Small Device Styles
   }
 
 }
-
-/*******************************************************************************
-Custom tweaks
-*******************************************************************************/
-ul#mirrors li img {
-  margin: 0 0 0 0.5em;
-  vertical-align: bottom;
-  border: none;
-  box-shadow: 0px 0px 0px 0px #000;
-}
