@@ -15,7 +15,7 @@ function writeMirrorStatus(mirror) {
   getMirrorStatus(url = mirror.textContent,
     callback = function(status) {
       if (status) {
-        mirror.children[1].src = 'images/okay.png';
+        mirror.children[1].src = 'images/success.png';
       } else {
         mirror.children[1].src = 'images/fail.png';
       }
