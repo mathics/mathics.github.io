@@ -15,9 +15,11 @@ function writeMirrorStatus(mirror) {
   getMirrorStatus(url = mirror.textContent,
     callback = function(status) {
       if (status) {
-        mirror.children[1].src = 'images/okay.png';
+        mirror.children[1].src = 'images/success.png';
+        mirror.children[1].alt = 'mirror status: OK';
       } else {
         mirror.children[1].src = 'images/fail.png';
+        mirror.children[1].alt = 'mirror status: fail';
       }
     }
   );
