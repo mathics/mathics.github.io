@@ -7,6 +7,7 @@ import re
 mirrors = [
     'http://mathics.angusgriffith.com/',
     'http://mathics.net/',
+    'http://mathics.kevz.me/',
 ]
 
 
