@@ -1,121 +1,91 @@
 ---
 redirect_from: "/Mathics/"
 ---
+
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Mathics : A free, light-weight alternative to Mathematica">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="Mathics : A free, light-weight alternative to Mathematica">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"><!-- Mirror status list -->
+  <script type="text/javascript" src="javascripts/mirror-status.js"></script>
 
-    <title>Mathics</title>
-  </head>
+  <title>Mathics</title>
+</head>
 
-  <body>
+<body onload="updateMirrorStatus()">
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+    <a id="forkme_banner" href="https://github.com/mathics/Mathics">View on GitHub</a>
+    <h1 id="project_title">Mathics</h1>
+    <h2 id="project_tagline">A free, light-weight alternative to Mathematica</h2>
+    </header>
+  </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mathics/Mathics">View on GitHub</a>
-
-          <h1 id="project_title">Mathics</h1>
-          <h2 id="project_tagline">A free, light-weight alternative to Mathematica</h2>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on <a href="http://sympy.org/">SymPy</a> for most mathematical tasks.</p>
+    <section id="main_content" class="inner">
+      <p>Mathics is a free, general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on <a href="http://sympy.org/">SymPy</a> for most mathematical tasks.</p>
 
-<h2>
-<a id="use-mathics-online" class="anchor" href="#use-mathics-online" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Mathics online</h2>
+      <h2>
+      <a id="use-mathics-online" class="anchor" href="#use-mathics-online" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Mathics online</h2>
 
-<p>Mirrors:</p>
+      <p>Mirrors:</p>
 
-<ul id="mirrors">
-<li><a href="http://mathics.angusgriffith.com/">http://mathics.angusgriffith.com/</a></li>
-<li><a href="http://www.mathics.net/">http://www.mathics.net/</a></li>
-</ul>
+      <ul id="mirrors">
+      <li><a href="http://mathics.angusgriffith.com/">http://mathics.angusgriffith.com/</a></li>
+      <li><a href="http://www.mathics.net/">http://www.mathics.net/</a></li>
+      </ul>
 
-<h2>
-<a id="download-and-install-mathics" class="anchor" href="#download-and-install-mathics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download and install Mathics</h2>
+      <h2>
+      <a id="download-and-install-mathics" class="anchor" href="#download-and-install-mathics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download and install Mathics</h2>
 
-<p><a href="https://github.com/mathics/Mathics/releases/latest">Download</a></p>
+      <p><a href="https://github.com/mathics/Mathics/releases/latest">Download</a></p>
 
-<p><a href="https://github.com/mathics/Mathics/wiki/Installing">Installation guide</a></p>
+      <p><a href="https://github.com/mathics/Mathics/wiki/Installing">Installation guide</a></p>
 
-<h2>
-<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+      <h2>
+      <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
 
-<p><a href="http://mathics.angusgriffith.com/doc/">Browse online</a></p>
+      <p><a href="http://mathics.angusgriffith.com/doc/">Browse online</a></p>
 
-<p><a href="docs/mathics-0.9.pdf">Download PDF</a></p>
+      <p><a href="docs/mathics-0.9.pdf">Download PDF</a></p>
 
-<h2>
-<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
+      <h2>
+      <a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
 
-<p><a href="https://github.com/mathics/Mathics/issues">Report a bug</a></p>
+      <p><a href="https://github.com/mathics/Mathics/issues">Report a bug</a></p>
 
-<p>Use the Google groups <a href="https://groups.google.com/forum/#!forum/mathics-users">mathics-users</a> for discussions regarding using Mathics and <a href="https://groups.google.com/forum/#!forum/mathics-devel">mathics-devel</a> for discussions about development.</p>
+      <p>Use the Google groups <a href="https://groups.google.com/forum/#!forum/mathics-users">mathics-users</a> for discussions regarding using Mathics and <a href="https://groups.google.com/forum/#!forum/mathics-devel">mathics-devel</a> for discussions about development.</p>
 
-<hr>
+      <hr>
 
-<p><strong>Wanted</strong>: Developers! Please get in touch if you want to be part of this awesome project.</p>
+      <p><strong>Wanted</strong>: Developers! Please get in touch if you want to be part of this awesome project.</p>
+    </section>
+  </div>
 
-      </section>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+  <footer class="inner">
+    <p class="copyright">Mathics, <a href="http://www.mathics.org/">mathics.org</a>, and <a href="http://www.mathics.net/">mathics.net</a> were created by <a href="http://www.poeschko.com/">Jan Pöschko</a> <a href="https://github.com/poeschko" class="user-mention">@poeschko</a>. The project is currently maintained by Angus Griffith <a href="https://github.com/sn6uv" class="user-mention">@sn6uv</a> and Ben Jones <a href="https://github.com/bnjones" class="user-mention">@bnjones</a>.</p>
+  </footer>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Mathics, <a href="http://www.mathics.org/">mathics.org</a>, and <a href="http://www.mathics.net/">mathics.net</a> were created by <a href="http://www.poeschko.com/">Jan Pöschko</a> <a href="https://github.com/poeschko" class="user-mention">@poeschko</a>. The project is currently maintained by Angus Griffith <a href="https://github.com/sn6uv" class="user-mention">@sn6uv</a> and Ben Jones <a href="https://github.com/bnjones" class="user-mention">@bnjones</a>.</p>
-      </footer>
-    </div>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
 
-<script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-66935986-1");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
 
-<script type="text/javascript">
-  try {
-    var pageTracker = _gat._getTracker("UA-66935986-1");
-  pageTracker._trackPageview();
-  } catch(err) {}
-</script>
-
-<script type="text/javascript">
-  function ajaxRequest(url, callback) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == 4) {
-        callback(xmlhttp.status, xmlhttp.responseText);
-      }
-    }
-    xmlhttp.open('POST', url, true);
-    xmlhttp.send();
-  }
-
-  function checkMirrorStatus(mirror) {
-    mirror.innerHTML = mirror.innerHTML + '<img src="images/loading.gif"/>';
-    ajaxRequest(url = mirror.textContent, function (stat, text) {
-      if (stat == 200) {
-        mirror.children[1].src = 'images/okay.png';
-      }
-      mirror.children[1].src = 'images/fail.png';
-    });
-  }
-
-  mirrors = document.getElementById("mirrors").getElementsByTagName("li");
-  for (var i = 0; i < mirrors.length; i++) {
-    console.log("checking", mirrors[i].textContent);
-    checkMirrorStatus(mirrors[i]);
-  }
-</script>
-
-  </body>
+</body>
 </html>
