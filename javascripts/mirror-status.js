@@ -8,7 +8,7 @@ function updateMirrorStatus() {
     }
   };
 
-  xmlhttp.open('GET', 'http://angusgriffith.com/mathics_mirror_status.json', true);
+  xmlhttp.open('GET', 'https://angusgriffith.com/mathics_mirror_status.json', true);
   xmlhttp.send();
 }
 
