@@ -1,104 +1,323 @@
----
-redirect_from: "/Mathics/"
----
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+  Fractal by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->
 <html>
+  <head>
+    <title>Mathics</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+  </head>
+  <body>
 
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="description" content="Mathics : A free, open-source alternative to Mathematica">
+    <!-- Header -->
+      <header id="header">
+        <div class="content">
+          <h1><a href="#">Mathics</a></h1>
+          <p>A free, open-source alternative to Mathematica</p>
+          <ul class="actions">
+            <li>
+              <a href="#install">
+                <button class="primary icon solid fa-download">
+                  Download
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#description">
+                <button class="icon solid fa-chevron-down scrolly">
+                  Learn More
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img id="logo" src="images/logo-heptatom.svg" alt="Mathics logo"  />
+      </header>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/custom.css">
-  <!-- Mirror status list -->
-  <script type="text/javascript" src="javascripts/mirror-status.js"></script>
+    <!-- Description -->
+      <section id="description" class="wrapper style2 special">
+        <header class="inner">
+          <h2>
+            Mathics is a free, open-source general-purpose computer
+            algebra system featuring Mathematica-compatible syntax and
+            functions. It is backed by highly extensible Python code, relying
+            on <a href="http://sympy.org/">SymPy</a> for most mathematical 
+            tasks.
+          </h2>
+        </header>
+      </section>
 
-  <title>Mathics</title>
-</head>
+    <!-- Features -->
+      <section id="features" class="wrapper">
+        <div class="inner alt">
+          <section class="spotlight">
+            <div class="image">
+              <img src="images/gpl.svg" alt="GPLv3 logo" />
+            </div>
+            <div class="content">
+              <h3>Free & OpenSource</h3>
+              <p> Mathics is licensed under 
+              <a
+                href="https://github.com/mathics/Mathics/blob/master/COPYING.txt"/>
+                GPLv3</a> and it's developed by an active community of
+              volunteers. It's source code is freely available at 
+              <a href="https://github.com/mathics/Mathics">our GitHub
+                repository</a>
+              </p>
+            </div>
+          </section>
+          <section class="spotlight">
+            <div class="image">
+              <img src="images/python-logo.svg" alt="Python logo" />
+            </div>
+            <div class="content">
+              <h3>Python integration</h3>
+              <p>Mathics is primarily a Python library, which means it can
+              interact with other Python packages!
+              </p>
+            </div>
+          </section>
+          <section class="spotlight">
+            <div class="image">
+              <img src="images/cli.png" alt="mathicsscript screenshot" />
+            </div>
+            <div class="content">
+              <h3>Flexible clients</h3>
+              <p>Mathics is built to work on multiple clients. The main ones
+              are <a href="https://github.com/Mathics3/mathicsscript">
+                mathicsscript</a> (a GNU-like CLI client) and 
+              <a href="https://github.com/Mathics3/mathics-django">
+              mathics-django</a> (a Django-based web interface). We're also
+              working on a Jupyter kernel for Mathics
+            </div>
+          </section>
+        </div>
+      </section>
+    
+    <!-- Installation -->
+      <section id="install" class="wrapper style2 special">
+        <h2>Installation</h2>
+        <div class="inner align-left">
+          <p>
+            Mathics is broken up into a number of pieces in order to
+            facilitate using the parts of you desire. This can also reduce the
+            vast number of dependencies to those that you need and the
+            footprint to run.  The pieces are described next with the
+            component’s OS and Python-package dependencies.
+          </p>
 
-<body onload="updateMirrorStatus()">
-  <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header class="inner">
-    <a id="forkme_banner" href="https://github.com/mathics/Mathics">View on GitHub</a>
-    <h1 id="project_title">Mathics</h1>
-    <h2 id="project_tagline">A free, open-source alternative to Mathematica&#174</h2>
-    </header>
-  </div>
+          <h3>Mathics Core</h3>
 
-  <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-      <p>Mathics is a free, open-source general-purpose online computer algebra system featuring Mathematica-compatible syntax and functions. It is backed by highly extensible Python code, relying on <a href="http://sympy.org/">SymPy</a> for most mathematical tasks.</p>
+          <p>
+            The Mathics core is required for any work with Mathics.
+          </p>
 
-      <h2>
-      <!-- <a id="use-mathics-online" class="anchor" href="#use-mathics-online" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Mathics online</h2> -->
+          <p>
+            If you are developing a non-interactive application written in
+            Mathics, you may no more than this.
+          </p>
 
-      <!-- <p>Mirrors:</p> -->
+          <h3>mathisscript</h3>
 
-      <!-- <ul id="mirrors"> -->
-      <!-- </ul> -->
+          <p>
+              mathicsscript is a CLI client for Mathics. Some of it's features
+              include:
+          </p>
 
-      <h2>
-      <a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span class="octicon octicon-link"></span></a>Screenshots</h2>
+          <ul>
+            <li>GNU Readline terminal interaction. This includes
 
-      <h3>mathicsscript: a text interface</h3>
+              <ul>
+                <li>saving command history between sessions.</li>
 
-      <p><img src="screenshots/mathicsscript.png"></p>
+                <li>
+                  variable completion, even for symbol names like 
+                  <code>\[Sigma]</code>
+                </li>
 
-      <p>For animated demos, see the <a href="https://github.com/Mathics3/mathicsscript/tree/master/screenshots">mathics screenshot directory</a>.</p>
+                <li>
+                  limited <kbd>ESC</kbd> keyboard input; for example
+                  <kbd>ESC</kbd>+<kbd>p</kbd>+<kbd>ESC</kbd> is <kbd>π</kbd>
+                </li>
+              </ul>
+            </li>
 
-      <h3>mathicsserver: a Django-based Web interface</h3>
-      <p><img src="screenshots/mathicsserver.png"></p>
+            <li>
+              Syntax highlighting using pygments.
+            </li>
 
-      <h2>
-      <a id="download-and-install-mathics" class="anchor" href="#download-and-install-mathics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download and install Mathics</h2>
+            <li>
+              Automatic detection of light or dark terminal background color.
+            </li>
 
-      <p><a href="https://github.com/mathics/Mathics/wiki/Installing-and-Running">Installation and Running Guide</a></p>
+            <li>
+              Entering and displaying Unicode symbols such as used for Pi or
+              Rule arrows
+            </li>
+          </ul>
 
-      <h2>
-      <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation</h2>
+          <p>
+              mathicsscript is a CLI client for Mathics. Some of it's features
+              mathicsscript can be installed via 
+              <a href="https://pypi.org/project/mathicsscript/">PyPI</a>.
+          </p>
 
-      <!-- <p><a href="http://mathics.github.io/doc/">Browse online</a></p> -->
+          <h3>Mathics-Django</h3>
 
-      <p><a href="docs/mathics-latest.pdf">Download PDF</a></p>
+          <p>
+              If you prefer, as many do, browser-based interaction with nicely
+              formatted graphics and MathML-formatted output, right now there
+              is a Django-based PyPI package 
+              <a href="https://pypi.org/project/Mathics-Django">
+                Mathics-Django
+              </a>.
+          </p>
 
-      <h2>
-      <a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
+          <p>
+              Some of its features:
+          </p>
+             
+          <ul>
+            <li>
+              Extensive online documentation and interactive documentation via
+              Ajax
+            </li>
 
-      <p>Use the Google groups <a href="https://groups.google.com/forum/#!forum/mathics-users">mathics-users</a> for discussions regarding using Mathics and <a href="https://groups.google.com/forum/#!forum/mathics-devel">mathics-devel</a> for discussions about development.</p>
+            <li>
+              Integrated graphics and MathML mathematics output via MathJax
+            </li>
+          
+            <li>
+              Notebook-like sessions
+            </li>
+          </ul>
+              
+          <p>
+              To use this, you will need Django installed, and a browser with
+              JavaScript enabled.
+          </p>
 
-      <ul>
-      <li><a href="https://github.com/mathics/Mathics/issues">Report a Mathics bug</a></li>
-      <li><a href="https://github.com/mathics/">Github mathics Organization</a></li>
-      </ul>
+          <p>
+            For more information on how to install Mathics see
+            <a href="https://mathics-development-guide.readthedocs.io/en/latest/installing.html">
+              mathics-development-guide.readthedocs.io/en/latest/installing
+            </a>.
+        </div>
+      </section>
 
-      <hr>
+    <!-- Documentation -->
+      <section id="docs" class="wrapper style2 special">
+        <h2>Documentation</h2>
+        <div class="inner align-left">
+          <p>
+            Documentation for the Mathics system is provided in the PDF format
+            (<a href="https://mathics.org/docs/mathics-latest.pdf">download the
+            PDF</a>). You can find internal documentation at 
+            <a href="https://mathics-development-guide.readthedocs.io/en/latest/">
+            mathics-development-guide.readthedocs.io/en/latest/</a>.
+          </p>
+        </div>
+      </section>
 
-      <p><strong>Wanted</strong>: Developers! Please get in touch if you want to be part of this awesome project.</p>
-    </section>
-  </div>
+    <!-- Support -->
+      <section id="support" class="wrapper style2 special">
+        <h2>Support</h2>
+        <div class="inner align-left">
+          <p>
+            Use the Google groups 
+            <a href="https://groups.google.com/forum/#!forum/mathics-users">
+            mathics-users</a> for discussions regarding using Mathics.
+          </p>
 
-  <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-  <footer class="inner">
-    <p class="copyright">Mathics, <a href="http://www.mathics.org/">mathics.org</a>, and <a href="http://www.mathics.net/">mathics.net</a> were created by <a href="http://www.poeschko.com/">Jan Pöschko</a> <a href="https://github.com/poeschko" class="user-mention">@poeschko</a>. The project is currently maintained by the Mathics team.</p>
-  </footer>
-  </div>
+          <ul>
+            <li>
+              <a href="https://github.com/mathics/Mathics/issues">
+                Report a Mathics bug
+              </a>
+            </li>
 
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
+            <li>
+              <a href="https://github.com/mathics/">
+                GitHub mathics Organization
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <script type="text/javascript">
-    try {
-      var pageTracker = _gat._getTracker("UA-66935986-1");
-      pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
+    <!-- Contributing -->
+      <section id="contributing" class="wrapper style2 special">
+        <h2>Contributing</h2>
+        <div class="inner align-left">
+          <p>
+            Please checkout our contributing guide at 
+            <a href="https://mathics-development-guide.readthedocs.io/en/latest/developing-code/contributing-developing.html">
+            mathics-development-guide.readthedocs.io/en/latest/developing-code/contributing-developing
+            </a>. <strong>Developers wanted! Please get in touch if you want 
+            to be part of this awesome project.</strong>
+          </p>
+        </div>
+      </section>
 
-</body>
+    <!-- On the Shoulders of Giants -->
+      <section id="on_the_shoulders_of_giants" class="wrapper style2 special">
+        <h2>On the Shoulders of Giants</h2>
+        <div class="inner align-left">
+          <p>
+            This project is only possible due the work of countless volunteers,
+            which includes people who worked on software used internally by
+            Mathics such as:
+          </p>
+
+          <ul>
+            <li><a href="https://www.sympy.org/en/index.html">SymPy</a></li>
+            <li><a href="https://mpmath.org/doc/current/">mpmath</a></li>
+            <li><a href="https://github.com/numba/llvmlite">llvmlite</a></li>
+            <li><a href="https://www.djangoproject.com/">Django</a></li>
+            <li><a href="https://www.mathjax.org/">MathJax</a></li>
+            <li><a href="https://asymptote.sourceforge.io/">Asymptote</a></li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Screenshots -->
+      <section id="screenshots" class="wrapper style2 special">
+        <header class="inner major">
+          <h2>Screenshots</h2>
+          <dl>
+            <dt>mathicsscript</dt>
+            <dd>
+              <div class="image">
+                <img src="images/mathicsscript1.gif" 
+                     alt="mathicsscript screenshot" />
+              </div>
+            </dd>
+            <dt>mathicsscript</dt>
+            <dd>
+              <div class="image">
+                <img src="images/mathicsscript2.gif"
+                     alt="mathicsscript screenshot" />
+              </div>
+            </dd>
+            <dt>mathicsserver</dt>
+            <dd>
+              <div class="image">
+                <img src="images/mathicsserver.png"
+                     alt="Mathics-Django screenshot" />
+              </div>
+            </dd>
+        </header>
+      </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          2020 &copy; The Mathics Team. Credits: <a href="http://html5up.net">HTML5 UP</a>
+        </p>
+      </footer>
+  </body>
 </html>
