@@ -283,6 +283,7 @@ h6 {
   line-height: 1em;
   margin: 0 0 1em 0;
   letter-spacing: -0.0125em;
+  text-align: left;
 }
 
 h1 a,
@@ -3928,5 +3929,3 @@ table.alt tbody tr td {
     padding: 3em 1.5em 1em 1.5em;
   }
 }
-
-
