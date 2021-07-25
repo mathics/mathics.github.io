@@ -125,7 +125,7 @@ video {
 }
 
 #logo {
-  margin-bottom: 2em;
+  margin-bottom: 0px;
 }
 
 article,
@@ -2760,7 +2760,6 @@ table tfoot {
 table.alt tbody tr td {
   border-color: #e6e6e6;
 }
-
 
 /* Wrapper */
 

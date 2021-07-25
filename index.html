@@ -18,27 +18,23 @@
       <header id="header" class="inner">
 	<a id="forkme_banner" href="https://github.com/mathics">View on GitHub</a>
         <div class="content">
-          <h1><a href="#">Mathics</a></h1>
+          <h1><img id="logo" src="images/logo-heptatom.svg" alt="Mathics logo" height="50px"/>&nbsp;<a href="#">Mathics</a></h1>
           <p>A free, open-source alternative to Mathematica&#174</p>
-          <ul class="actions">
-            <li>
-              <a href="#install">
-                <button class="primary icon solid fa-download">
-                  Download
-                </button>
-              </a>
-            </li>
-            <li>
-              <a href="#description">
-                <button class="icon solid fa-chevron-down scrolly">
-                  Learn More
-                </button>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <img id="logo" src="images/logo-heptatom.svg" alt="Mathics logo"  />
+          <div class="image">
+              <img src="images/mathicsserver.png" height="300px" width="300px"
+                   alt="Mathics-Django screenshot" />
+          </div>
+          <div class="image">
+            <img src="images/mathicsscript1.gif" height="300px" width="300px"
+                 alt="mathicsscript screenshot" />
+          </div>
+	  <div class="image">
+            <img src="images/mathics-manual.png" height="300px" width="300px"
+		 alt="Mathics manual screenshot" />
+	  </div>
+	</div>
       </header>
+
     </div>
 
     <!-- Description -->
@@ -61,14 +57,17 @@
             Mathics is broken up into a number of pieces in order to
             facilitate using the parts of you desire. This also
             reduces the vast number of dependencies to those that you
-            need and the footprint to run. However if you want to run
-            everything we have a docker container
-            on <a href="https://hub.docker.com/r/mathicsorg/mathics">dockerhub</a>
-            that has everything.
-	  </p>
+            need and the footprint to run.</p>
 
-	  <p>The pieces are described next with the
-	    components' OS and Python-package dependencies.
+	  <p>If you want to run everything, we have a docker container
+            on <a href="https://hub.docker.com/r/mathicsorg/mathics">dockerhub</a>
+            that has all of the components installed in the container.</p>
+
+	  <p>If you want to install everything locally without docker and have all the the necessary
+	    OS components there is the <a href="https://pypi.org/project/Mathics-omnibus/">PyPI Mathics omnibus package</a>.
+
+	  <p>The pieces are described next with the components' OS and
+	    Python-package dependencies.
           </p>
 
           <h3><a href="https://github.com/mathics/Mathics">Mathics Core</a></h3>
@@ -190,6 +189,12 @@
             <a href="https://mathics-development-guide.readthedocs.io/en/latest/">
             mathics-development-guide.readthedocs.io/en/latest/</a>.
           </p>
+	  <p>
+	    <div class="image">
+              <img src="images/mathics-manual.png"
+                   alt="Mathics manual screenshot" />
+            </div>
+	  </p>
         </div>
       </section>
 
