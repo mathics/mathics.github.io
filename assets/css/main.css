@@ -3183,7 +3183,8 @@ table.alt tbody tr td {
 
 .wrapper.style2 a {
   color: inherit;
-  border-bottom-color: #d6d6d6;
+  border-bottom-color: #c4c4e6;
+  text-decoration: underline;
 }
 
 .wrapper.style2 a:hover {
