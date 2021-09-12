@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Yearly Status</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet" href="assets/css/status.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+  </head>
+
+  <body>
+    <h2 style="font-weight: bold">Yearly Status as of September, 2021</h2>
+    <p>In the past year we have:
+      <ul>
+	<li>Upgraded all packages and libraries that Mathics depends on</li>
+	<li>Broken up what was one single repository into several git repositories and installable Python libraries/packages</li>
+	<li>Expanded and strengthened each of these components</li>
+	<li>Added about 150 Mathematica Built-in Functions, and enhanced or fixed bugs in about 60 existing Built-in Functions</li>
+	<li>Expanded and Improved interactive online and <a href="https://mathics.org/docs/mathics-latest.pdf">printed documentation</a></li>
+	<li>Added <a href="https://pypi.org/project/pymathics-natlang/">a package for Networks and Graphs</a> via networkx</li>
+	<li>Greatly expanded the <a href="https://pypi.org/project/mathicsscript/">command-line utility</a></li>
+	<li>Provide an up-to-date <a href="https://hub.docker.com/repository/docker/mathicsorg/mathics">docker images</a> for major releases which contains all of the components and add-ons, and even the most recent LaTeX PDF (with a program to read it)
+	  Fixed numerous bugs and enhanced performance</li>
+      </ul>
+    </p>
+
+    <p>This is the one minute summary. However in my opinion this doesn't do justice to the huge amount of work behind some of these. So if you have more than a minute here
+      is an elaboration of some of the bullet items above
+    </p>
+    <h2>Updated versions of software</h2>
+    <p>
+
+      <ul>
+	<li>Python: from 2.7 to 3.x up to 3.9</li>
+	<li>Django from 1.6 .10 to 3.2.6</li>
+	<li>MathJax 2.0 to 2.7.9</li>
+	<li>three.js  r49 to r132</li>
+	<li>mpmath 0.17  to 1.2.1</li>
+	<li>Sympy 0.7.3 to 1.8</li>
+      </ul>
+      </p>
+
+    <p>Significant split-off or new packages/repositories:
+
+      <ul>
+	<li><a href="https://github.com/Mathics3/mathics-scanner">mathics-scanner</a> &mdash; extensive tables of Mathematica symbols and their properties, also includes a scanner for Mathematica</li>
+	<li><a href="https://github.com/Mathics3/mathics-pygments">mathics-pygments</a> &mdash;
+	lexer and highlighter using the pygments engine based on rsmenon's pygments-mathematica. This uses the scanner tables above.</li>
+
+	<li><a href="https://github.com/Mathics3/mathicsscript">mathicsscript</a> &mdash;
+	command-line utility using the above and prompt toolkit which has enhanced syntax coloring, command-completion and can display 2D and 3D graphics (via matplotlib for 2D and  asymptote for 3D)</li>
+
+	<li><a href="https://github.com/Mathics3/mathics-django">mathics-threejs-backend</a> &mdash;
+	An implementation of Mathematica <a href="https://reference.wolfram.com/language/ref/Graphics3D.html">Graphics3D</a> using <a href="https://threejs.org/"three.js</a></li>
+
+	<li><a href="https://github.com/Mathics3/mathics-django">mathics-django</a> &mdash;
+	the Django-based Web front-end using the above minus mathicsscript</li>
+
+	<li><a href="https://github.com/Mathics3/pymathics-graph">pymathics-graph</a> &mdash;
+	Mathics Graph add-on functions using NetworkX and Matplotlib</li>
+
+	<li><a href="https://github.com/Mathics3/pymathics-natlang">pymathics-natlang</a> &mdash;
+	Mathics Natural-Language Processing add-on</li>
+
+	<li><a href="https://github.com/Mathics3/mathics-omnibus">mathics-omnibus</a> &mdash;
+	a repository to bind them all into a <a href="https://pypi.org/project/Mathics-omnibus/">single PyPI package</a> and provides the docker scripts that make up the <a href="https://github.com/Mathics3/mathics-omnibus">Mathics docker image</a>.</li>
+
+	<li><a href="https://github.com/Mathics3/mathics-development-guide">mathics-development-guide</a> &mdash;
+	Sphinx documentation for developing Mathics. Browsable developer docs are <a href="https://mathics-development-guide.readthedocs.io/en/latest/">here</a>.</li>
+	</dl>
+
+      <p>It is hoped that a number of the above can and will be used
+      outside of Mathics. Those of note are the Mathematica tables and scanner <i>mathics-scanner</i>, the Graphics3D implementation in
+      three.js, mathics-threejs-backend, and the syntax highlighter
+      mathics-pygments. In fact, <a href="https://swmath.org/software/5895">Symja</a> which is interesting of its own
+      right, uses or consults some of these.</p>
+
+      <p>We are always looking for ways to collaborate with Sage or other open-source projects.</p>
+
+      <h1>Upcoming year</h1>
+      <p>Although what we have now is pretty impressive (and I am amazed we have gotten this far), we should not give the impression that Mathics is anywhere complete.</p>
+
+    <p>Here is what we are working on and what I hope to see accomplished over the next year:
+
+      <ul>
+	<li> Speeding up performance in the Mathics interpreter &mdash; we are working on this right now.</li>
+	<li>FindMinimum &mdash; it was started but is not complete</li>
+	<li>Speeding up loading time - this is harder and can only come after the above</li>
+	<li>Being able to run more large Mathematica packages out of the box. Right now we can handle Steven Skiena&quote;s Combinatorica v0.9.  We would like to see, Rubi and KnotTheory at least added to this. If you have suggestions and are willing to help out contact us. Right now we are finding the performance the biggest obstacle here.
+	  Setting up some sort of registry of Mathematica packages that work on Mathics</li>
+	<li>Supporting Backward compatibility of older Mathematica versions</li>
+	<li>Jupyter integration. Right now the main obstacle is cleaning up the API interaction between Mathics core and front ends</li>
+      </ul>
+    </p>
+
+    <p>We could use lots of help in just about every aspect. Please help out! If you are not a Python programmer, that&quote;s okay. Here are some areas outside of Python programming where you could help:
+
+      <ul>
+	<li>Mathematica Programmers &mdash;
+	Add missing Built in Function or functions which bridge compatibility between  Mathematica versions</li>
+
+	<li>Mathematicians &mdash;
+	Make our online and printed documentation more usable and informative. Find better examples for the functions, or describe the functions better.</li>
+
+	<li>Literary types &mdash;
+	Write or adapt your Mathematica Tutorial. As above, improve our user (or developer) documentation</li>
+
+	<li>Asymptote and LaTeX gurus &mdash;
+	our Asymptote library especially needs work</li>
+      </ul>
+
+      And of course if you are a Python programmer, especially with a facility for Sympy, numpy, mpmath or Scipy, please join us.</p>
+
+    <p>Last, and most important, I would like to mention and offer great thanks to those who have been a part of the Mathics team which has done all of the things above. Without these people we would have been stuck back a decade ago in 2011.</p>
+
+    <h2>Thanks</h2>
+    <p>What has happend and will happen is not without a lot effort, work and a dedication to making Mathics better. Special thanks to:</p>
+
+    <ul>
+      <li>Mauricio Matera &mdash;  he knows the most about the current system, the Wolfram Language and Mathematica. He has written most of the new Built-in Functions too</li>
+      <li>Tiago Cavalcante Trindade &mdash; he started the mathics-threejs-backend and has gotten us a decade further in three.js has modernized most of the Django code. He is also a performance guru so the graphics speedups in rendering 3D objects is all due to him.</li>
+      <li>Pablo Emilio Escobar Gaviria  &mdash; he started the Mathematica Symbol Tables (mathics-scanner) moved us forward in Django and has a great general knowledge of the system.</li>
+    </ul>
+    </p>
+
+    <p>A full list of people who have contributed can be found <a href="https://github.com/Mathics3/mathics-core/blob/master/AUTHORS.txt">here</a>.</p>
+  </body>
+</html>
