@@ -49,7 +49,7 @@
             in the Python ecosystem.
           </h2>
 	  <ul>
-	    <li> <a href="sept-21-status.html">Status as of Septemper 2021</a></li>
+	    <li> <a href="sept-21-status.html">Status as of September 2021</a></li>
 	  </ul>
         </header>
       </section>
@@ -59,23 +59,24 @@
         <h2>Components</h2>
         <div class="inner align-left">
           <p>
-            Mathics is broken up into a number of pieces in order to
-            facilitate using the parts of you desire. This also
-            reduces the vast number of dependencies to those that you
-            need and the footprint to run.</p>
-
-	  <p>If you want to run everything, we have a docker container
-            on <a href="https://hub.docker.com/r/mathicsorg/mathics">dockerhub</a>
-            that has all of the components installed in the container.</p>
-
-	  <p>If you want to install everything locally without docker and have all the the necessary
-	    OS components there is the <a href="https://pypi.org/project/Mathics-omnibus/">PyPI Mathics omnibus package</a>.
-
-	  <p>The pieces are described next with the components' OS and
-	    Python-package dependencies.
+            Mathics has a modular design, allowing to reuse parts of it
+            and run them with tailored dependencies and minimal footprint.
           </p>
 
-          <h3><a href="https://github.com/Mathics3/mathics-core">Mathics Core</a></h3>
+	  <p>To run the full Mathics, a complete Docker image is available at
+            <a href="https://hub.docker.com/r/mathicsorg/mathics">DockerHub</a>.
+          </p>
+
+	  <p>To install everything locally without Docker, use the
+            <a href="https://pypi.org/project/Mathics-omnibus/">Mathics-omnibus Python package</a>
+            available from the Python package index.
+          </p>
+
+	  <p>The pieces that make up Mathics are described below, along with their
+	    dependencies, be they system package or Python package dependencies.
+          </p>
+
+          <h3>Mathics Core</h3>
 
           <p>
             The Mathics core is required for any work with Mathics.
@@ -86,7 +87,13 @@
             Mathics, you may need no more than this.
           </p>
 
-          <h3 id="mathicsscript"><a href="https://pypi.org/project/mathics-django/">mathicsscript</a></h3>
+          <ul>
+            <li>
+              Code repository: <a href="https://github.com/Mathics3/mathics-core">mathics-core on GitHub</a>
+            <li>
+          </ul>
+
+          <h3 id="mathicsscript">mathicsscript</h3>
           <p>
               mathicsscript is a fancier command-line client for Mathics.
           </p>
@@ -104,11 +111,12 @@
           </p>
 
           <ul>
-            <li><a href="https://python-prompt-toolkit.readthedocs.io/en/stable">prompt_toolkit</a>
-            or GNU Readline terminal interaction. This includes
+            <li>terminal interaction using either
+            <a href="https://python-prompt-toolkit.readthedocs.io/en/stable">prompt_toolkit</a>
+            or GNU Readline. This includes
 
               <ul>
-                <li>saving command history between sessions.</li>
+                <li>saving command history between sessions</li>
 
                 <li>
                   variable completion, even for symbol names like
@@ -123,31 +131,33 @@
             </li>
 
             <li>
-              Syntax highlighting using pygments.
+              syntax highlighting using pygments
             </li>
 
             <li>
-              Automatic detection of light or dark terminal background color.
+              automatic detection of light or dark terminal background color.
             </li>
 
             <li>
-              Entering and displaying Unicode symbols such as used for Pi or
+              entering and displaying Unicode symbols such as used for Pi or
               Rule arrows
             </li>
           </ul>
 
-          <p>
-              The mathicsscript is github respository is
-              <a href="https://github.com/Mathics3/mathicsscript/">here</a>.
-          </p>
+          <ul>
+            <li>
+              Code repository: <a href="https://github.com/Mathics3/mathicsscript/">mathicsscript on GitHub</a>
+            <li>
+            <li>
+              Python package: <a href="https://pypi.org/project/mathicsscript">mathicsscript on PyPI</a>
+            <li>
+          </ul>
 
-          <h3 id="django"><a href="https://pypi.org/project/mathics-django/">Mathics-Django</a></h3>
+          <h3 id="django">Mathics-Django</h3>
 
           <p>
-            There is a browser-based webserver that has
-	    MathML-formatted formatted output using <a href="https://threejs.org/">three.js</a>
-	    graphics. The github repository is
-              <a href="https://github.com/Mathics3/mathics-django">here</a>.
+            This is a browser-based webserver with MathML-formatted output
+            and <a href="https://threejs.org/">Three.js</a> graphics.
           </p>
 
           <p>
@@ -162,16 +172,16 @@
 
           <ul>
             <li>
-              Extensive online documentation and interactive documentation via
+              extensive online documentation and interactive documentation via
               Ajax
             </li>
 
             <li>
-              Integrated graphics and MathML mathematics output via MathJax and Three.js.
+              integrated graphics and MathML mathematics output via MathJax and Three.js
             </li>
 
             <li>
-              Notebook-like sessions
+              notebook-like sessions
             </li>
           </ul>
 
@@ -179,6 +189,15 @@
               To use this, you will need Django installed and a browser with
               JavaScript enabled.
           </p>
+
+          <ul>
+            <li>
+              Code repository: <a href="https://github.com/Mathics3/mathics-django/">Mathics-Django on GitHub</a>
+            <li>
+            <li>
+              Python package: <a href="https://pypi.org/project/mathics-django">Mathics-Django on PyPI</a>
+            <li>
+          </ul>
 
           <p>
             For more information on how to install Mathics see
@@ -228,14 +247,8 @@
 
             <li>
               Code repositories for all the components and website live
-              under the
-              <a href="https://github.com/mathics/">
-                mathics
-              </a>
-              and the
-              <a href="https://github.com/mathics3/">
-                Mathics3
-              </a>
+              under the <a href="https://github.com/mathics/">mathics</a>
+              and the <a href="https://github.com/Mathics3/">Mathics3</a>
               GitHub organizations.
             </li>
           </ul>
@@ -249,8 +262,8 @@
           <p>
             Please check out our contributing guide at
             <a href="https://mathics-development-guide.readthedocs.io/en/latest/developing-code/contributing-developing.html">
-            mathics-development-guide.readthedocs.io/en/latest/developing-code/contributing-developing
-            </a>. <strong>Developers wanted! Please get in touch if you want
+            mathics-development-guide.readthedocs.io/en/latest/developing-code/contributing-developing</a>.
+            <strong>Developers wanted! Please get in touch if you want
             to be part of this awesome project.</strong>
           </p>
         </div>
@@ -265,13 +278,12 @@
             </div>
             <div class="content">
               <h3>Free software</h3>
-              <p> Mathics is licensed under
-              <a
-                href="https://github.com/Mathics3/mathics-core/blob/master/COPYING.txt"/>
-                GPLv3</a> and is developed by an active community of
-                volunteers. Its source code is freely available in the Github organizations
+              <p> Mathics is licensed under the GNU General Public License
+                <a href="https://github.com/Mathics3/mathics-core/blob/master/COPYING.txt">GPLv3</a>
+                and is developed by an active community of
+                volunteers. Its source code is freely available in repositories under the Github organizations
                 <a href="https://github.com/mathics">Mathics</a> and
-                <a href="https://github.com/Mathics3">Mathics3</a> repositories.
+                <a href="https://github.com/Mathics3">Mathics3</a>.
               </p>
             </div>
           </section>
@@ -281,7 +293,8 @@
             </div>
             <div class="content">
               <h3>Python</h3>
-              Since Mathics is a collection of Python packages. It is intended to be used as a collection or from other Python packages and code.
+              As a collection of Python packages, Mathics is intended
+              to be used as a whole or from other Python packages and code.
               </p>
             </div>
           </section>
@@ -305,7 +318,7 @@
             <li><a href="https://github.com/numba/llvmlite">llvmlite</a></li>
             <li><a href="https://www.djangoproject.com/">Django</a></li>
             <li><a href="https://www.mathjax.org/">MathJax</a></li>
-            <li><a href="https://threejs.org/">three.js</a></li>
+            <li><a href="https://threejs.org/">Three.js</a></li>
             <li><a href="https://asymptote.sourceforge.io/">Asymptote</a></li>
             <li><a href="https://SciPy.org/">SciPy</a> (which also includes a number of the above)</li>
           </ul>
