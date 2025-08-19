@@ -3,13 +3,14 @@
   Fractal by HTML5 UP
   html5up.net | @ajlkn
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license) -->
-<html>
+<html lang="en">
   <head>
     <title>Mathics3</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   </head>
   <body>
 
@@ -19,22 +20,33 @@
 	<a id="mathics_live_banner" href="https://mathics3.github.io/Mathics3-live/">Try online</a>
 	<a id="forkme_banner" href="https://github.com/Mathics3">View on GitHub</a>
         <div class="content">
-          <h1><img id="logo" src="images/logo-heptatom.svg" alt="Mathics logo" height="50px"/>&nbsp;<a href="#">Mathics3</a></h1>
-          <p>A free, open-source alternative to Mathematica&#174</p>
+          <h1>
+	    <img id="logo" src="images/logo-heptatom.svg"
+		 alt="Mathics3 Logo"
+		 title="Mathics3 Logo"
+		 height="50px">&nbsp;<a href="#">Mathics3</a>
+	  </h1>
+          <p>A free, open-source alternative to Mathematica&#174;</p>
           <div class="image">
 	    <a href="#django">
               <img src="images/mathicsserver.png" height="300px" width="300px"
-                   alt="Mathics-Django screenshot" /></a>
+                   alt="Mathics3 Django screenshot"
+		   title="Mathics3 Django screenshot">
+	    </a>
           </div>
           <div class="image">
 	    <a href="#mathicsscript">
               <img src="images/mathicsscript1.gif" height="300px" width="300px"
-                   alt="mathicsscript screenshot" /></a>
+                   alt="mathicsscript screenshot"
+                   title="mathicsscript screenshot">
+	    </a>
           </div>
 	  <div class="image">
 	    <a href="#doc">
               <img src="images/Mathics3-manual-page.png" height="300px" width="300px"
-		   alt="Mathics3 manual page screenshot" /></a>
+		   alt="Mathics3 manual page screenshot"
+		   title="Mathics3 manual page screenshot">
+	    </a>
 	  </div>
 	</div>
       </header>
@@ -45,7 +57,7 @@
       <section id="description" class="wrapper style2 special">
         <header class="inner">
           <h2>Mathics3 is a free, open-source general-purpose computer
-            algebra system featuring Mathematica&#174-compatible syntax and
+            algebra system featuring Mathematica&#174;-compatible syntax and
             functions. It relies on a number of other Python libraries
             in the Python ecosystem.
           </h2>
@@ -71,7 +83,7 @@
             available from the Python package index.
           </p>
 
-	  <p>The pieces that make up Mathics are described below, along with their
+	  <p>The pieces that make up Mathics3 are described below, along with their
 	    dependencies, be they system package or Python package dependencies.
           </p>
 
@@ -95,60 +107,59 @@
               mathicsscript is a fancier command-line client for Mathics3.
           </p>
           <p>
-            <dd>
               <div class="image">
                 <img src="images/mathicsscript1.gif"
-                     alt="mathicsscript screenshot" />
+                     alt="mathicsscript screenshot"
+                     title="mathicsscript screenshot">
               </div>
-            </dd>
           </p>
 
           <p>
               mathicsscript features:
-          </p>
-
-          <ul>
-            <li>terminal interaction using either
-            <a href="https://python-prompt-toolkit.readthedocs.io/en/stable">prompt_toolkit</a>
-            or GNU Readline. This includes
 
               <ul>
-                <li>saving command history between sessions</li>
+		<li>terminal interaction using either
+		  <a href="https://python-prompt-toolkit.readthedocs.io/en/stable">prompt_toolkit</a>
+		  or GNU Readline. This includes
 
-                <li>
-                  variable completion, even for symbol names like
-                  <code>\[Sigma]</code>
-                </li>
+		  <ul>
+                    <li>saving command history between sessions</li>
 
-                <li>
-                  limited <kbd>ESC</kbd> keyboard input; for example
-                  <kbd>ESC</kbd>+<kbd>p</kbd>+<kbd>ESC</kbd> is <kbd>π</kbd>
-                </li>
+                    <li>
+                      variable completion, even for symbol names like
+                      <code>\[Sigma]</code>
+                    </li>
+
+                    <li>
+                      limited <kbd>ESC</kbd> keyboard input; for example
+                      <kbd>ESC</kbd>+<kbd>p</kbd>+<kbd>ESC</kbd> is <kbd>π</kbd>
+                    </li>
+		  </ul>
+		</li>
+
+		<li>
+		  syntax highlighting using pygments
+		</li>
+
+		<li>
+		  automatic detection of light or dark terminal background color.
+		</li>
+
+		<li>
+		  entering and displaying Unicode symbols such as used for Pi or
+		  Rule arrows
+		</li>
               </ul>
-            </li>
 
-            <li>
-              syntax highlighting using pygments
-            </li>
-
-            <li>
-              automatic detection of light or dark terminal background color.
-            </li>
-
-            <li>
-              entering and displaying Unicode symbols such as used for Pi or
-              Rule arrows
-            </li>
-          </ul>
-
-          <ul>
-            <li>
-              Code repository: <a href="https://github.com/Mathics3/mathicsscript/">mathicsscript on GitHub</a>
-            </li>
-            <li>
-              Python package: <a href="https://pypi.org/project/mathicsscript">mathicsscript on PyPI</a>
-            </li>
-          </ul>
+              <ul>
+		<li>
+		  Code repository: <a href="https://github.com/Mathics3/mathicsscript/">mathicsscript on GitHub</a>
+		</li>
+		<li>
+		  Python package: <a href="https://pypi.org/project/mathicsscript">mathicsscript on PyPI</a>
+		</li>
+              </ul>
+          </p>
 
           <h3 id="django">Mathics-Django</h3>
 
@@ -160,28 +171,28 @@
           <p>
             <div class="image">
               <img src="images/mathicsserver.png"
-                   alt="Mathics-Django screenshot" />
+                   alt="Mathics3-Django screenshot"
+		   title="Mathics3 Django screenshot">
             </div>
 	  </p>
           <p>
-              It features:
-          </p>
+            It features:
 
-          <ul>
-            <li>
-              extensive online documentation and interactive documentation via
-              Ajax
-            </li>
+            <ul>
+              <li>
+		extensive online documentation and interactive documentation via
+		Ajax
+              </li>
 
-            <li>
-              integrated graphics and MathML mathematics output via MathJax and Three.js
-            </li>
+              <li>
+		integrated graphics and MathML mathematics output via MathJax and Three.js
+              </li>
 
-            <li>
-              notebook-like sessions
-            </li>
-          </ul>
-
+              <li>
+		notebook-like sessions
+              </li>
+            </ul>
+	  </p>
           <p>
               To use this, you will need Django installed and a browser with
               JavaScript enabled.
@@ -219,7 +230,9 @@
 	    <div class="image">
 	      <a href="https://mathics.org/docs/mathics-latest.pdf">
 		<img src="images/Mathics3-manual-page.png"
-                     alt="Mathics3 manual screenshot" /></a>
+                     alt="Mathics3 manual screenshot"
+		     title="Screenshot of Mathics3 User Manual">
+	      </a>
             </div>
 	  </p>
         </div>
@@ -231,13 +244,13 @@
         <div class="inner align-left">
           <p>
             Use <a href="https://github.com/Mathics3/mathics-core/discussions">
-            Mathics-core discussions </a>.
+            Mathics3 Kernel discussions </a>.
           </p>
 
           <ul>
             <li>
               <a href="https://github.com/Mathics3/mathics-core/issues">
-                Report a Mathics bug
+                Report a Mathics3 bug
               </a>
             </li>
 
@@ -268,11 +281,11 @@
         <div class="inner alt">
           <section class="spotlight">
             <div class="image">
-              <img src="images/gpl.svg" alt="GPLv3 logo" />
+              <img src="images/gpl.svg" alt="GPLv3 logo">
             </div>
-            <div class="content">
+b            <div class="content">
               <h3>Free software</h3>
-              <p> Mathics is licensed under the GNU General Public License
+              <p> Mathics3 is licensed under the GNU General Public License
                 <a href="https://github.com/Mathics3/mathics-core/blob/master/COPYING.txt">GPLv3</a>
                 and is developed by an active community of
                 volunteers. Its source code is freely available in repositories under the Github organizations
@@ -283,12 +296,13 @@
           </section>
           <section class="spotlight">
             <div class="image">
-              <img src="images/python-logo.svg" alt="Python logo" />
+              <img src="images/python-logo.svg" alt="Python logo">
             </div>
             <div class="content">
               <h3>Python</h3>
-              As a collection of Python packages, Mathics is intended
-              to be used as a whole or from other Python packages and code.
+	      <p>
+		As a collection of Python packages, Mathics is intended
+		to be used as a whole or from other Python packages and code.
               </p>
             </div>
           </section>
